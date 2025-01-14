@@ -18,7 +18,7 @@ jobs:
   call-reusable-workflow:
     strategy:
       matrix:
-        nodeversion: [14, 16, 18, 20, hi Joe!]
+        nodeversion: [14, 16, 18, 20, hi, Joe!, "hi, Joe!"]
     uses: ./.github/workflows/reusable-workflow.yml
     with:
       node: ${{ matrix.nodeversion }}
